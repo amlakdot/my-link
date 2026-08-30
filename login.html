@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ورود | My Link</title>
+    <meta name="description" content="ورود به حساب My Link">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>ورود</h1>
+
+        <p>
+            وارد حساب My Link خودت شو.
+        </p>
+
+        <form id="loginForm">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="ایمیل"
+                autocomplete="email"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="رمز عبور"
+                autocomplete="current-password"
+                required
+            >
+
+            <button type="submit" class="btn">
+                ورود
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            حساب نداری؟
+            <a href="register.html">ثبت‌نام کن</a>
+        </p>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+</html>
