@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ثبت‌نام | My Link</title>
+    <meta name="description" content="ساخت حساب در My Link">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>ساخت حساب</h1>
+
+        <p>
+            برای ساخت صفحه خودت ثبت‌نام کن.
+        </p>
+
+        <form id="registerForm">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="ایمیل"
+                autocomplete="email"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="رمز عبور"
+                autocomplete="new-password"
+                minlength="6"
+                required
+            >
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="تکرار رمز عبور"
+                autocomplete="new-password"
+                minlength="6"
+                required
+            >
+
+            <button type="submit" class="btn">
+                ساخت حساب
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <p>
+            حساب داری؟
+            <a href="login.html">وارد شو</a>
+        </p>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+</html>
